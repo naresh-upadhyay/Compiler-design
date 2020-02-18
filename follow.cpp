@@ -45,7 +45,7 @@ SET findFollow(char ch,MCII mpflag){
                     }                  
                 }
                 else if(str[j] == tch && j+1 == str.size()){
-                    temp = findFollow(ch,mpflag);
+                    temp = findFollow(it.first,mpflag);
                 }
                 follow.insert(temp.begin(),temp.end());
             }
